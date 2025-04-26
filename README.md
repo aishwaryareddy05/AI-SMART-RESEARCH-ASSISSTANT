@@ -163,7 +163,7 @@ graph TD
 - **Accuracy**: 89% on DocQA benchmark
 - **Throughput**: 50 RPM (4vCPU)
 
-## 🌐 Deployment
+## 🌐 Additional Deployment
 ```bash
 docker build -t doc-ai .
 docker run -p 8000:8000 -e GOOGLE_API_KEY=your_key doc-ai
