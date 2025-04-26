@@ -175,4 +175,4 @@ Apache 2.0 - See [LICENSE](LICENSE).
 ---
 
 > "Transforming documents into actionable intelligence"  
-> - AI Engineering Team
+> - Aishwarya
