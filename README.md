@@ -59,6 +59,7 @@ flowchart LR
     D --> E[FAISS Indexing]
 ```
 
+
 ### 2. Agent Matrix
 | Agent | Responsibilities | Tools |
 |-------|------------------|-------|
@@ -67,18 +68,14 @@ flowchart LR
 | **Formatter** | Response polishing | Templates, Style Rules |
 
 ### 3. RAG Implementation
-```python
-def rag_flow(query):
-    # 1. Retrieve
-    docs = retriever.similar_search(query)
-    
-    # 2. Augment
-    context = format_docs(docs)
-    
-    # 3. Generate
-    prompt = create_prompt(query, context)
-    return llm.invoke(prompt)
+```mermaid
+graph LR
+    A[User Query] --> B(Retrieve Docs)
+    B --> C[Reason with LLM]
+    C --> D[Format Response]
+    D --> E[Final Answer]
 ```
+
 
 ## 🚀 Quick Start
 
