@@ -51,7 +51,7 @@ async def ask_question(request: QueryRequest) -> QueryResponse:
     """Process a question."""
     try:
         result = workflow.execute(request.query)
-        return QueryResponse(result["response"])
+        return QueryResponse(**result["response"])
 
     except Exception as e:
         raise HTTPException(
